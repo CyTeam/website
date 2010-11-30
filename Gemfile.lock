@@ -34,6 +34,8 @@ GEM
       activesupport
     babosa (0.2.0)
     builder (2.1.2)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     dragonfly (0.7.7)
       rack
     erubis (2.6.6)
@@ -41,6 +43,7 @@ GEM
     filters_spam (0.3)
     friendly_id (3.1.8)
       babosa (~> 0.2.0)
+    haml (3.0.24)
     i18n (0.5.0)
     mail (2.2.11)
       activesupport (>= 2.3.6)
@@ -105,6 +108,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass (>= 0.10.2)
+  haml
   rails (= 3.0.3)
   refinerycms (~> 0.9.8.5)
   refinerycms-i18n (~> 0.9.8.7)

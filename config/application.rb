@@ -40,3 +40,9 @@ module Refinery
     config.filter_parameters += [:password]
   end
 end
+
+Sass::Plugin.add_template_location(
+  Rails.root.join('themes/cyt/stylesheets/sass').to_s,
+  Rails.root.join('themes/cyt/stylesheets').to_s
+)
+

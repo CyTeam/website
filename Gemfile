@@ -57,5 +57,6 @@ gem 'rmagick',                  '~> 2.12.0', rmagick_options
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
-
+gem 'haml'
+gem 'compass', '>= 0.10.2'
 # END USER DEFINED

@@ -61,3 +61,5 @@ nbproject
 capybara-*html
 
 
+.sass-cache/*
+public/stylesheets/compiled/*.css
