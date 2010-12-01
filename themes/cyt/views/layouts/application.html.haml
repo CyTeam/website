@@ -4,11 +4,9 @@
   %body
     = render :partial => '/shared/site_bar'
     #container
-      #header
-        #main-menu
-          = render :partial => '/shared/header'
+      = render :partial => '/shared/header'
                  
-      #content-column
+      #content-column.large
         #content
           = yield
 

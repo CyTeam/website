@@ -3,9 +3,17 @@
   color: $content_font_color
 
 #content-column
+  +column($blueprint-grid-columns - 4)
+  +last
   a
     +link-colors($content_link_color_default, $content_link_color_hover, $content_link_color_active, $content_link_color_visited, $content_link_color_focus)
     +hover-link
+
+#content-column.large
+  +column($blueprint-grid-columns)
+
+#content
+  float: left
 // Box styling
 // classes: .small-box, .medium-box, .large-box
 @import 'partials/content/boxes'
