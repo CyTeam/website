@@ -1,0 +1,6 @@
+Icon creation
+=============
+convert logo_20.png -fill '#7d8e0a' -colorize 100%  logo_green_20.png
+convert logo_20.png -fill '#cdae3a' -colorize 100%  logo_yellow_20.png
+convert logo_20.png -fill '#246f84' -colorize 100%  logo_blue_20.png
+convert logo_20.png -fill '#7e0d3b' -colorize 100%  logo_red_20.png
