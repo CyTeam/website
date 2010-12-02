@@ -3,14 +3,14 @@
   = render :partial => '/shared/head', :locals => {:theme => true}
   %body
     = render :partial => '/shared/site_bar'
+    = render :partial => '/shared/header'
     #container
-      = render :partial => '/shared/header'
-                 
       #content-column.large
         #content
           = yield
-      #footer
-        Here comes our footer!!
+      #content-footer
+    #footer
+      = render :partial => '/shared/footer'
     - if refinery_user?
       - unless admin? ## jquery scripts should already be cached when using the site bar as login has happened.
         - content_for :site_bar_assets do

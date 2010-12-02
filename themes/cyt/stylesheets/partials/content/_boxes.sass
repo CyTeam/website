@@ -5,6 +5,13 @@ $space = 30px
   
 .box *
   margin: $space/2
+
+.box.no-content-margin,
+.box.no-content-margin *
+  float: left
+
+.box.no-content-margin *
+  margin: 0px
   
 .box.small
   +column($blueprint-grid-columns/4)
@@ -22,5 +29,5 @@ $space = 30px
   border-bottom: 1px solid $seperation_line_color
 
 .box.min-height-245px
-  min-height: 245px
+  +min-height(245px)
 

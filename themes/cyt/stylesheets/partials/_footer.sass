@@ -1,4 +1,12 @@
-#footer
+@import "compass/layout/sticky-footer"
+@include sticky-footer(189px, "#container", "#content-footer", "#footer")
+
+#content-footer
   +column($blueprint-grid-columns, true)
-  height: 189px
+  margin-top: 60px
+
+#footer
   background: url(/images/cyt/footer_background.png) repeat-x
+
+#footer-content
+  +container

@@ -1,8 +1,15 @@
-#header
-  +column($blueprint-grid-columns, true)
-  height: 95px
-  background-color: $header_background_color
+$height = 95px
   
+#header
+  height: $height
+  background-color: $header_background_color
+
+#header-container
+  +container
+
+#header-content
+  +column($blueprint-grid-columns, true)
+
 #main-menu ul
   +horizontal-list
   float: right

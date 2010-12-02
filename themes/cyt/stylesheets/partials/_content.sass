@@ -1,8 +1,10 @@
-#container
-  +container
+body
   color: $font_color
   font-family: Helvetica, Arial, sans-serif
   font-size: 12px
+  
+#container
+  +container
 
 #content-column
   +column($blueprint-grid-columns - 4, true)
@@ -16,6 +18,13 @@
 #content
   float: left
 
+.hide-for-non-javascript
+  display: none
+
+img
+  padding: 0px
+  margin: 0px
+  border: none
 // Title styling
 // elements: h1, h2, ...
 @import 'partials/content/titles'
