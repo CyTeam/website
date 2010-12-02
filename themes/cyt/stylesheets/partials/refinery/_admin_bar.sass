@@ -3,18 +3,20 @@
 
 #site-bar-container
   +container
-  
+
+#site-bar-content
+  +column($blueprint-grid-columns, true)
+  +prepend-top
+  +append-bottom
+
 #site-bar *
   color: white
     
-#editor_switch,
-#site_bar_refinery_cms_logo,
-#site_bar_branding
+#editor-switch
   float: left
-  margin-top: 15px
 
-#site_bar_branding
+#site-bar-branding
   float: right
 
-#site_bar_refinery_cms_logo
+#site-bar-refinery-cms-logo
   display: none
