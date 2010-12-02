@@ -1,9 +1,7 @@
 #header
   #header-container
     #header-content
-      #logo
-        %h1#logo-text
-          = link_to RefinerySetting.get(:site_name), root_url(:only_path => true)
+      = link_to RefinerySetting.get(:site_name), root_url(:only_path => true), :id => 'logo'
       = render :partial => "/shared/menu", |
         :locals => {                       |
           :dom_id => 'menu',               |

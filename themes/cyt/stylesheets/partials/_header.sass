@@ -11,7 +11,8 @@ $height = 95px
   +column($blueprint-grid-columns, true)
 
 #main-menu
-  margin-top: $height - 40
+  +column($blueprint-grid-columns - 4, true)
+  margin-top: $height - 20
   ul
     +horizontal-list
     float: right
@@ -25,3 +26,12 @@ $height = 95px
       color: $main_nav_link_color_default
       &:hover
         color: $main_nav_link_color_hover
+
+#logo
+  margin-top: 20px
+  +column(4)
+  +replace-text('/images/cyt/logo.png')
+  width: 137px
+  height: 56px
+  display: block
+  
