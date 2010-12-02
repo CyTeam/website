@@ -1,5 +1,11 @@
+$space = 30px
+
 .box
-  +prepend-top
+  margin-top: $space
+  
+.box *
+  margin: $space/2
+  
 .box.small
   +column($blueprint-grid-columns/4)
 
@@ -10,8 +16,11 @@
   +last
 
 .box.border-top
-  border-top: 1px solid $content_seperation_line_color
+  border-top: 1px solid $seperation_line_color
 
 .box.border-bottom
-  border-top: 1px solid $content_seperation_line_color
+  border-bottom: 1px solid $seperation_line_color
+
+.box.min-height-245px
+  min-height: 245px
 

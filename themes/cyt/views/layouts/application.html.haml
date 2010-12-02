@@ -9,7 +9,8 @@
       #content-column.large
         #content
           = yield
-
+      #footer
+        Here comes our footer!!
     - if refinery_user?
       - unless admin? ## jquery scripts should already be cached when using the site bar as login has happened.
         - content_for :site_bar_assets do

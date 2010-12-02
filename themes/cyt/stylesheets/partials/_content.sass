@@ -1,19 +1,24 @@
 #container
   +container
-  color: $content_font_color
+  color: $font_color
+  font-family: Helvetica, Arial, sans-serif
+  font-size: 12px
 
 #content-column
-  +column($blueprint-grid-columns - 4)
-  +last
+  +column($blueprint-grid-columns - 4, true)
   a
-    +link-colors($content_link_color_default, $content_link_color_hover, $content_link_color_active, $content_link_color_visited, $content_link_color_focus)
+    +link-colors($link_color_default, $link_color_hover, $link_color_active, $link_color_visited, $link_color_focus)
     +hover-link
 
 #content-column.large
-  +column($blueprint-grid-columns)
+  +column($blueprint-grid-columns, true)
 
 #content
   float: left
+
+// Title styling
+// elements: h1, h2, ...
+@import 'partials/content/titles'
 // Box styling
 // classes: .small-box, .medium-box, .large-box
 @import 'partials/content/boxes'
