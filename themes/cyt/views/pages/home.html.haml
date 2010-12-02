@@ -1,5 +1,6 @@
-.box.large.border-top.border-bottom
-  %canvas
+.box.large.border-top.border-bottom.no-content-margin
+  %canvas.hide-for-non-javascript
+  = image_tag '/images/cyt/home.png', :class => 'show-for-non-javascript'
 
 = render :partial => "/shared/content_page", :locals => {:hide_sections => [:body_content_title, :body_content_right]}
 
