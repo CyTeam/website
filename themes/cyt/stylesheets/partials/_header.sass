@@ -3,6 +3,10 @@ $height = 95px
 #header
   height: $height
   background-color: $header_background_color
+  border-bottom: 4px solid $header_border_color
+
+#home #header
+  border-bottom: 4px solid $header_background_color
 
 #header-container
   +container
@@ -16,6 +20,8 @@ $height = 95px
   ul
     +horizontal-list
     float: right
+    ul
+      display: none
     li
       margin-right: 30px
       &.last

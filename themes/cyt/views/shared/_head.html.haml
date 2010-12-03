@@ -17,3 +17,4 @@
   = "<meta name=\"description\" content=\"#{@meta.meta_description}\" />".html_safe if @meta.meta_description.present?
   = yield :head_libraries
   = yield :head
+  = auto_discovery_link_tag(:rss, news_items_url(:format => 'rss'))

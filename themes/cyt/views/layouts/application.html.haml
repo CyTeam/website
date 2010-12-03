@@ -1,7 +1,7 @@
 !!! 5
 %html{:xmlns => 'http://www.w3.org/1999/xhtml'}
   = render :partial => '/shared/head', :locals => {:theme => true}
-  %body
+  %body{:id => (@page.home? ? 'home' : 'default')}
     = render :partial => '/shared/site_bar'
     = render :partial => '/shared/header'
     #container
