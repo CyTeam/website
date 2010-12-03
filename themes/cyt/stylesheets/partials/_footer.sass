@@ -10,3 +10,22 @@
 
 #footer-content
   +container
+  color: $footer_font_color
+  a
+    margin: 0
+    color: $footer_font_color
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  h3
+    color: $footer_font_color
+    border-bottom: 1px solid $footer_font_color
+    margin: 0px
+    padding-left: 30px
+  ul
+    +no-bullets
+    li
+      line-height: 1.5em
+      margin-left: 15px
+      margin-top: 0px
+      margin-bottom: 0px

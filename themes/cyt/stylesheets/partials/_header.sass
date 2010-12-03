@@ -16,10 +16,14 @@ $height = 95px
   ul
     +horizontal-list
     float: right
+    li
+      margin-right: 30px
+      &.last
+        margin-right: 0px
     a
       +link-colors($main_nav_link_color_default, $main_nav_link_color_hover, $main_nav_link_color_active, $main_nav_link_color_visited, $main_nav_link_color_focus)
-      +unstyled-link
       font-weight: bold
+      text-decoration: none
     .selected a
       color: $main_nav_link_color_active
     .selected.first a
