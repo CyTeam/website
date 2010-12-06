@@ -4,4 +4,7 @@
 module ApplicationHelper
   include Refinery::ApplicationHelper # leave this line in to include all of Refinery's core helper methods.
 
+  def home_news
+    NewsItem.latest(2)
+  end
 end

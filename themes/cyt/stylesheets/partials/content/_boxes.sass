@@ -8,6 +8,9 @@ $space = 30px
 .box *
   margin: $space/2
 
+.box * *
+  margin: 0px
+
 .box.no-content-margin,
 .box.no-content-margin *
   float: left
@@ -20,6 +23,9 @@ $space = 30px
 
 .box.medium
   +column($blueprint-grid-columns/2)
+
+.box.large
+  +column($blueprint-grid-columns)
 
 .box.last
   +last

@@ -1,0 +1,20 @@
+- content_for :body_content_title do
+  = t('plugins.refinerycms_news.title')
+
+- content_for :body_content_left do
+  = @page[:body] if @news_items.offset == 0
+  - if @news_items.any?
+    - @news_items.each do |item|
+      .box.large.border-bottom.last
+        %h3= link_to item.title, news_item_url(item)
+        %p
+          %small
+            = t('.published')
+            = l(item.publish_date, :format => :long)
+        = truncate  item.body, :length => 300, :omission => " ... #{link_to t('.read_more'), news_item_url(item)}", :preserve_html_tags => true
+    = will_paginate(@news_items)
+  - else
+    .box.large
+      %em= t('.no_items_yet')
+
+= render :partial => "/shared/content_page"

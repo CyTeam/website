@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/CyTeam/refinerycms-news.git
+  remote: git://github.com/resolve/refinerycms-news.git
   revision: c60c49bb8f54252e987b02900f47bb8cbb47c831
   specs:
     refinerycms-news (0.9.9.6)

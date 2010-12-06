@@ -4,6 +4,11 @@ h1, h2, h3
   font-weight: bold
   color: $title_color
 
+#content-column
+  h1, h2, h3
+    a
+      +link-colors($title_color, $title_color, $title_color, $title_color, $title_color)
+      
 h1
   font-size: 130%
   margin-top: $space
@@ -18,10 +23,10 @@ h3
   font-size: 110%
 
 h2.blue
-  +logo('blue', 20)
+  +logo('logo_blue', 20)
 h2.green
-  +logo('green', 20)
+  +logo('logo_green', 20)
 h2.red
-  +logo('red', 20)
+  +logo('logo_red', 20)
 h2.yellow
-  +logo('yellow', 20)
+  +logo('logo_yellow', 20)
