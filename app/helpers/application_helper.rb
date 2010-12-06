@@ -7,4 +7,8 @@ module ApplicationHelper
   def home_news
     NewsItem.latest(2)
   end
+
+  def home_tweets
+    Tweet.latest(2)
+  end
 end

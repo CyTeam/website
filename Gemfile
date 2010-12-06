@@ -59,4 +59,5 @@ gem 'rmagick',                  '~> 2.12.0', rmagick_options
 # USER DEFINED
 gem 'haml'
 gem 'compass', '>= 0.10.2'
+gem 'grackle'
 # END USER DEFINED

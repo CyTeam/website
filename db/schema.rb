@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101203135618) do
+ActiveRecord::Schema.define(:version => 20101206121538) do
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -139,6 +139,12 @@ ActiveRecord::Schema.define(:version => 20101203135618) do
 
   add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_and_sluggable_type_and_scope_and_sequence", :unique => true
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
+
+  create_table "tweets", :force => true do |t|
+    t.string   "content"
+    t.datetime "created"
+    t.string   "user_name"
+  end
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"
