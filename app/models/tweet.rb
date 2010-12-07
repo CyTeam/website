@@ -1,6 +1,7 @@
 require 'grackle'
 
 class Tweet < ActiveRecord::Base
+  include Twitter::Autolink
 
   MY_APPLICATION_NAME = "CyT_GmbH"
 
@@ -19,6 +20,10 @@ class Tweet < ActiveRecord::Base
         Tweet.create({:content => t.text, :created => created.to_s, :user_name => t.user.screen_name })
        end
     end
+  end
+
+  def linked_content
+    auto_link(content)
   end
 
   def user_link

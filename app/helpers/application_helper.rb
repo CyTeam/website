@@ -8,7 +8,7 @@ module ApplicationHelper
     NewsItem.latest(2)
   end
 
-  def home_tweets
-    Tweet.latest(2)
+  def tweets(amount = 2)
+    Tweet.latest(amount)
   end
 end

@@ -60,4 +60,5 @@ gem 'rmagick',                  '~> 2.12.0', rmagick_options
 gem 'haml'
 gem 'compass', '>= 0.10.2'
 gem 'grackle'
+gem 'twitter-text'
 # END USER DEFINED

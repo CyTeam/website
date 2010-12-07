@@ -7,7 +7,6 @@
 .box.medium
   %h2.red
     = t('plugins.refinerycms_news.title')
-
   - news = home_news
   %ul.no-bullets
     - if news.any?
@@ -24,7 +23,6 @@
 .box.medium.last
   %h2.red
     Twitter News
-  - tweets = home_tweets
   - if tweets.any?
     %ul.no-bullets
       - tweets.each do |tweet|
@@ -35,7 +33,7 @@
             = t('news_items.show.published')
             = l(tweet.created, :format => :long)
           %br
-          = tweet.content
+          != tweet.linked_content
 
       %li
         = link_to t('news_items.index.read_more'), '/news/tweets'  
