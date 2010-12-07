@@ -61,4 +61,5 @@ gem 'haml'
 gem 'compass', '>= 0.10.2'
 gem 'grackle'
 gem 'twitter-text'
+gem 'fancy-buttons'
 # END USER DEFINED
