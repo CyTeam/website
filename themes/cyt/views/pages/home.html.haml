@@ -19,12 +19,15 @@
               = t('news_items.show.published')
               = l(item.publish_date, :format => :long)
           = truncate  item.body, :length => 200, :omission => " ... #{link_to t('news_items.index.read_more'), news_item_url(item)}", :preserve_html_tags => true
+    - else
+      %li
+        = t('news_items.index.no_items_yet')
 
 .box.medium.last
   %h2.red
     Twitter News
-  - if tweets.any?
-    %ul.no-bullets
+  %ul.no-bullets
+    - if tweets.any?
       - tweets.each do |tweet|
         %li.margin-bottom
           %h3
@@ -36,4 +39,7 @@
           != tweet.linked_content
 
       %li
-        = link_to t('news_items.index.read_more'), '/news/tweets'  
+        = link_to t('news_items.index.read_more'), '/news/tweets'
+    - else
+      %li
+        = t('home.no_tweets_yet')
