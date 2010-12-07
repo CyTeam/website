@@ -30,10 +30,6 @@ class Tweet < ActiveRecord::Base
     "http://twitter.com/#{user_name}"
   end
 
-  def self.test
-    puts RefinerySetting.get(:twitter_consumer_key)
-  end
-
   private
   def self.client
     Grackle::Client.new(:auth=>{
