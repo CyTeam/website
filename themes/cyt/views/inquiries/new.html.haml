@@ -1,0 +1,30 @@
+- content_for :body_content_left do
+  .box.medium.border-top
+    %h2
+      = t('contact.title')
+    = form_for @inquiry do |f|
+      = render :partial => "/shared/admin/error_messages", |
+        :locals => {                                       |
+          :object => @inquiry,                             |
+          :include_object_name => true                     |
+        }                                                  |
+      .field
+        = f.required_label :name
+        = f.text_field :name
+      .field
+        = f.required_label :email
+        = f.text_field :email
+      .field
+        = f.label :phone
+        = f.text_field :phone
+      .field.message_field
+        = f.required_label :message
+        = f.text_area :message, :rows => 8
+      .actions
+        = f.submit t('.send')
+        = link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false)
+
+  .box.medium.border-top.last
+    = raw @page[Page.default_parts.first.to_sym]
+
+= render :partial => "/shared/content_page"

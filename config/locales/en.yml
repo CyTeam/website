@@ -2,3 +2,5 @@ en:
   home:
     twitter_news: Twitter News
     no_tweets_yet: At this moment there are no tweets.
+  contact:
+    title: Contact form
