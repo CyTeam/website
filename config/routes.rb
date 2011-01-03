@@ -10,6 +10,7 @@ Refinery::Application.routes.draw do
     root :to => 'dashboard#index'
   end
 
+  match '/system/images/*dragonfly', :to => Dragonfly[:images]
   # Marketable URLs should be appended to routes by the Pages Engine.
   # Catch all routes should be appended to routes by the Core Engine.
 
