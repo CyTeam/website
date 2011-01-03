@@ -52,7 +52,8 @@ rmagick_options.update({
 }) if Bundler::WINDOWS
 
 # Specify a version of RMagick that works in your environment:
-gem 'rmagick',                  '~> 2.12.0', rmagick_options
+#gem 'rmagick',                  '~> 2.12.0', rmagick_options
+gem 'dragonfly', :git => 'git://github.com/refinerycms/dragonfly.git', :branch => 'imagemagick'
 
 # END REFINERY CMS ============================================================
 
