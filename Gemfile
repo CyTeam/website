@@ -63,4 +63,6 @@ gem 'compass', '>= 0.10.2'
 gem 'grackle'
 gem 'twitter-text'
 gem 'fancy-buttons'
+
+gem 'refinerycms-search', '~> 0.9.8'
 # END USER DEFINED
