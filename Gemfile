@@ -66,4 +66,5 @@ gem 'fancy-buttons'
 
 gem 'refinerycms-search', '~> 0.9.8'
 gem 'refinerycms-portfolio', '~> 0.9.9'
+gem 'refinerycms-search', '~> 0.9.8'
 # END USER DEFINED
