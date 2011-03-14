@@ -65,4 +65,5 @@ gem 'twitter-text'
 gem 'fancy-buttons'
 
 gem 'refinerycms-search', '~> 0.9.8'
+gem 'refinerycms-portfolio', '~> 0.9.9'
 # END USER DEFINED
